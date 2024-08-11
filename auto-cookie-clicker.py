@@ -57,7 +57,7 @@ while True:
     cookie.click()
     if time.time() > timeout:
         select_upgrade()
-        timeout = time.time() + 5
+        timeout = time.time()
 
     if time.time() > five_min:
         cookie_per_second = driver.find_element(By.ID, value="cps").text
